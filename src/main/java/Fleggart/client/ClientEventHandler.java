@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class ClientEventHandler {
 
     @SubscribeEvent
-    public static void registerModels(ModelRegistryEvent event) {
+    public static void registerModels(ModelRegistryEvent event) {  // 必须是 static
         ModelLoader.setCustomModelResourceLocation(
                 Item.getItemFromBlock(FleggartMod.ANCIENT_DEBRIS_BLOCK),
                 0,

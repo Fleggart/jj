@@ -12,7 +12,7 @@ import java.util.Random;
 public class AncientDebrisSpawner implements IWorldGenerator {
 
     private final WorldGenerator generator = new AncientDebrisGenerator();
-    private static final int CHANCE = 300;
+    private static final int CHANCE = 1;
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world,

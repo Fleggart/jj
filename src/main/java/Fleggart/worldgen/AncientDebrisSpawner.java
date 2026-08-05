@@ -12,13 +12,13 @@ import java.util.Random;
 public class AncientDebrisSpawner implements IWorldGenerator {
 
     private final WorldGenerator generator = new AncientDebrisGenerator();
-    private static final int CHANCE = 1;
+    private static final int CHANCE = 300;
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world,
                          IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
-        if (world.provider.getDimension() != 0) return;
+        if (world.provider.getDimension() != -1) return;
         if (random.nextInt(CHANCE) != 0) return;
 
         int x = chunkX * 16 + 8;

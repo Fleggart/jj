@@ -13,6 +13,6 @@ public class AncientDebrisBlock extends Block {
         setHarvestLevel("pickaxe", 2);
         setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setRegistryName("fleggart", "ancient_debris_block");
-        setUnlocalizedName("ancient_debris_block");  // ← 这个方法存在，但可能被 IDE 误报
+        setTranslationKey("ancient_debris_block");  // ← 改成这个
     }
 }

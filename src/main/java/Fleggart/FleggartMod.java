@@ -11,6 +11,5 @@ public class FleggartMod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         GameRegistry.registerWorldGenerator(new AncientDebrisSpawner(), 0);
-        System.out.println("✅ 世界生成器注册成功！");
     }
 }

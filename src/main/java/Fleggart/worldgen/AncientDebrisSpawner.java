@@ -1,6 +1,6 @@
 package Fleggart.worldgen;
 
-import net.minecraft.util.math.BlockPos;  // ← 添加这一行
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
@@ -12,7 +12,7 @@ import java.util.Random;
 public class AncientDebrisSpawner implements IWorldGenerator {
 
     private final WorldGenerator generator = new AncientDebrisGenerator();
-    private static final int CHANCE = 1;
+    private static final int CHANCE = 300;
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world,
@@ -23,7 +23,8 @@ public class AncientDebrisSpawner implements IWorldGenerator {
 
         int x = chunkX * 16 + 8;
         int z = chunkZ * 16 + 8;
-        int y = world.getTopSolidOrLiquidBlock(new BlockPos(x, 0, z)).getY();
+        
+        int y = 16;
 
         generator.generate(world, random, new BlockPos(x, y, z));
     }

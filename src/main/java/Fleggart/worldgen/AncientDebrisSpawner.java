@@ -1,5 +1,6 @@
 package Fleggart.worldgen;
 
+import net.minecraft.util.math.BlockPos;  // ← 添加这一行
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;

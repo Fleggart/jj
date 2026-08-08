@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.Side;
 public class ClientEventHandler {
 
     @SubscribeEvent
-    public static void registerModels(ModelRegistryEvent event) {  // 必须是 static
+    public static void registerModels(ModelRegistryEvent event) {  
         ModelLoader.setCustomModelResourceLocation(
                 Item.getItemFromBlock(FleggartMod.ANCIENT_DEBRIS_BLOCK),
                 0,
@@ -22,6 +22,5 @@ public class ClientEventHandler {
                         "inventory"
                 )
         );
-        System.out.println("✅ 客户端模型注册成功！");
     }
 }
